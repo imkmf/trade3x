@@ -4,10 +4,9 @@
   "description": "Website for the @tradetradetrade group on Telegram",
   "main": "index.js",
   "scripts": {
-    "build": "next build",
+    "build": "next build && next export",
     "dev": "next",
-    "postinstall": "npm run build",
-    "start": "NODE_ENV=production node server.js"
+    "start": "NODE_ENV=production next"
   },
   "author": "Kristian Freeman <@imkmf>",
   "license": "ISC",
