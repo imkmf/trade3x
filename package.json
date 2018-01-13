@@ -1,16 +1,15 @@
 {
   "name": "trade3x",
   "version": "1.0.0",
-  "description": "",
+  "description": "Website for the @tradetradetrade group on Telegram",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next",
     "build": "next build",
-    "start": "next start",
-    "heroku-postbuild": "next build"
+    "dev": "next",
+    "postinstall": "npm run build",
+    "start": "NODE_ENV=production node server.js"
   },
-  "author": "",
+  "author": "Kristian Freeman <@imkmf>",
   "license": "ISC",
   "dependencies": {
     "babel-plugin-inline-import": "^2.0.6",
